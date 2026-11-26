@@ -96,12 +96,23 @@ and ScrapIT GUI (the office system) from your company&#39;s own ScrapIT server.<
   and codes you scan are sent to your company&#39;s ScrapIT system as part of the ticket or record you are
   working on.</li>
   <li><strong>Microphone.</strong> Used only when you speak to Gizmo, the ScrapIT assistant, or dictate into a
-  field; what you say is sent to your company&#39;s ScrapIT system to answer you.</li>
+  field. Voice input uses your device&#39;s own speech recognition, which Apple or Google may process under
+  their terms; the resulting text is sent to your company&#39;s ScrapIT system.</li>
   <li><strong>Notifications.</strong> If you allow notifications, the app gets a device token from Apple or
   Google and gives it to your company&#39;s server, which uses it (through ScrapIT Software&#39;s notification
   service) to send you messages such as chat mentions and alerts. The notification service passes only the
   token and the short message to Apple or Google for delivery.</li>
 </ul>
+<h3>AI services</h3>
+<p>Some ScrapIT features use outside AI services, only when your company has them switched on:</p>
+<ul>
+  <li><strong>Gizmo, the ScrapIT assistant:</strong> your questions and the records Gizmo reads to answer them
+  are sent to Anthropic (Claude) to produce the answer.</li>
+  <li><strong>AI Match (photo check of the material on a ticket line):</strong> the line&#39;s photos and the
+  product claimed are sent to Anthropic (Claude), OpenAI and Google (Gemini), and, where your company has set it
+  up, Together AI, to compare what the photos show with the product claimed.</li>
+</ul>
+<p>These services receive the data only to process the request and return a result.</p>
 <p>Everything else you see and enter in the app is your company&#39;s ScrapIT system itself; the app stores no
 copy of it beyond the normal browser cache.</p>
 
